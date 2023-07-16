@@ -1,0 +1,14 @@
+.zagolovok {
+    font-size: 48px;
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+    font-family: normal;
+}
+
+* {
+    background: green;
+    color: white;
+}
