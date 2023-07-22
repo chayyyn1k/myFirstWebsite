@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "MyShrift";
+    src: url(kayf_bro.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    width: 100%;
+    color: white;
+    padding: 20px;
+    background: rgb(170, 180, 122);
+    box-sizing: border-box;
+    font-family: MyShrift;
+    font-size: larger;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.menu {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.banner-title, .banner-description {
+    text-align: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 40px;
+    font-family: MyShrift;
+}
+
+.banner-section {
+    padding: 100px 0;
+    background: url(img/beautiful-green-color-gradient-background_492281-1190.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-section {
+    padding: 50px 0;
+}
+
+.card-title, .card-description {
+    color: rgb(99, 15, 255);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-title {
+    font-family: MyShrift;
+}
+
+.card {
+    padding: 25px;
+    margin-top: 25px;
+    width: 25%;
+    background: white;
+    box-shadow: 0px 2px 40px 0px rgb(99, 235, 133);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-link {
+    text-decoration: none;
+    color: white;
+}
+
+.card-button {
+    text-align: center;
+    background: rgb(72, 61, 223);
+    padding: 10px 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    background: url(img/gradient_zelenyj_tekstura_131365_1920x1080.jpg);
+    background-size: cover;
+    padding: 100px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.last-word {
+    color: white;
+}
+
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: flex-end;
+}
+
