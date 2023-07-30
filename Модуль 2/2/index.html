@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let season = (prompt("Введите время года:" + 
+                            "\n1 Зима;" +
+                            "\n2 Весна;" +
+                            "\n3 Лето;" +
+                            "\n4 Осень;" ));
+            switch (season) {
+                case "Зима":
+                    alert("Вы попадете в Антарктиду");
+                    break;
+                case "Весна":
+                    alert("Вы попадете в Испанию");
+                    break;
+                case "Лето":
+                    alert("Вы попадете на Мальдивы");
+                    break;
+                case "Осень":
+                    alert("Вы попадете в Ирландию");
+                    break;
+                default:
+                    alert("Вы ввели неверное время года");            
+            }
+    </script>
+</body>
+</html>
