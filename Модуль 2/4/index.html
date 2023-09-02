@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка</title>
+</head>
+<body>
+    <input value="Работает?" onclick="alert('Работает. Не трогай!')" type="button">
+    <input value="Хм..." onclick="fastWords()" type="button">
+
+    <script> 
+        let box = ["Зачем", "Ты её", "Нажал?"];
+        let boxIndex = 0;
+        let bigBox = null;
+
+        function words() {
+            if (boxIndex < box.length) {
+                alert(box[boxIndex]);
+                boxIndex++;
+            } else {
+                clearInterval(bigBox); 
+            }
+        }
+
+        function fastWords() {
+            boxIndex = 0;
+            bigBox = setInterval(words, 10000);
+        }
+    </script>
+</body>
+</html>
