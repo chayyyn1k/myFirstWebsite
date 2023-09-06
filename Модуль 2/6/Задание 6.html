@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo {
+            position: relative;
+            overflow: hidden;
+            width: 500px;
+            height: 400px;
+        }
+
+        .photo img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: top 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="photo">
+        <img class="first-image" src="img/222.jpg" width="500px" height="400px">
+        <img class="second-image" src="img/333.jpg" width="500px" height="400px">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".first-image").click(function() {
+                $(this).animate({ top: '-400px' }, 1000, function() {
+                    $(this).hide();
+                    $(".second-image").show();
+                });
+            });
+
+            $(".second-image").click(function() {
+                $(this).hide();
+                $(".first-image").show().animate({ top: '0' }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
